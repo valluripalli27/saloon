@@ -267,16 +267,39 @@
     <img src="https://raw.githubusercontent.com/valluripalli27/saloon/33c031301d1cf2d91a9302fdccd2ad83eac7d0ab/Sidebar.png" alt="Sidebar">
   </div>
 </div>
+<div style="max-width: 600px; font-family: sans-serif; border: 1px solid #ccc; border-radius: 10px; overflow: hidden;">
 
-  <h2>Usability Testing</h2>
-  <p>Tested flows with 5 users across mobile and desktop. Feedback helped refine the "select stylist" and "payment" steps. Simplified booking steps based on confusion points.</p>
-
-  <h2>Visual Identity</h2>
-  <p>Brand keywords: Calm, Elegant, Spa-like. Used soft peach and lavender tones with rounded components to match the spa aesthetic.</p>
-
-  <div class="image-box">
-    <img src="images/ui1.jpg" alt="UI design">
+  <!-- Tab Navigation -->
+  <div style="display: flex; border-bottom: 1px solid #ccc;">
+    <label for="tab1" style="flex: 1; padding: 10px; text-align: center; cursor: pointer; background: #f9f9f9;">🧪 Usability Testing</label>
+    <label for="tab2" style="flex: 1; padding: 10px; text-align: center; cursor: pointer; background: #f9f9f9;">🎨 Visual Identity</label>
   </div>
+
+  <!-- Radio Inputs for Tabs -->
+  <input type="radio" name="tabs" id="tab1" checked style="display: none;">
+  <input type="radio" name="tabs" id="tab2" style="display: none;">
+
+  <!-- Tab Content -->
+  <div style="padding: 20px;">
+    <!-- Usability Testing Tab -->
+    <div id="content1" style="display: block;">
+      <p>Tested flows with 5 users across mobile and desktop. Feedback helped refine the "select stylist" and "payment" steps. Simplified booking steps based on confusion points.</p>
+    </div>
+
+    <!-- Visual Identity Tab -->
+    <div id="content2" style="display: none;">
+      <p>Brand keywords: Calm, Elegant, Spa-like. Used soft peach and lavender tones with rounded components to match the spa aesthetic.</p>
+    </div>
+  </div>
+
+  <style>
+    #tab1:checked ~ div > #content1 { display: block; }
+    #tab1:checked ~ div > #content2 { display: none; }
+    #tab2:checked ~ div > #content1 { display: none; }
+    #tab2:checked ~ div > #content2 { display: block; }
+  </style>
+</div>
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
   <div>
     <h2>Payments & Features</h2>
