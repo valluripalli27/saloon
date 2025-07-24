@@ -1,194 +1,191 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Salon & Spa Website App</title>
+  <title>Salon & Spa Case Study</title>
   <style>
-  body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    background: #fffaf0; /* Cream background */
-    color: #006a6a;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  h1 {
-    color: #f5a623;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  h2, .emoji-title {
-    margin-top: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-
-  .image-box {
-    background: #fff9f0;
-    border: 1px solid #f5a623;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(245,166,35,0.1);
-    margin-bottom: 10px;
-  }
-
-  .screenshots {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-
-  .screenshots img {
-    max-width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-
-  a {
-    display: inline-block;
-    margin-top: 30px;
-    color: #f5a623;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 500px) {
-    .screenshots img {
-      max-width: 100%;
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      background-color: #ffffff;
+      color: #333;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
     }
-  }
-</style>
+
+    h1, h2, h3 {
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .image-box {
+      margin: 30px 0;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .image-box img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #000;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #888;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Salon & Spa Website App</h1>
-<div style="width: 300px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; overflow: hidden;">
-  <img src="https://raw.githubusercontent.com/valluripalli27/mine-/main/user.png"
-       alt="Booking platform screenshot"
-       style="width: 100%; height: auto; display: block; object-fit: contain;" />
-</div>
-  <p>Designed a responsive booking platform for salons and spas, focusing on streamlined appointment scheduling, service browsing, user trust, and payment integration.</p>
 
-  <div class="image-box">
-    <img src="images/goal-screenshot.jpg" alt="Goal screenshot" />
+  <div class="section">
+    <p><strong>Project Overview:</strong> This is a responsive booking platform designed for salons and spas, focusing on simple appointment scheduling, browsing services, building user trust, and seamless payment integration.</p>
+
+    <div class="image-box">
+      <img src="https://raw.githubusercontent.com/valluripalli27/mine-/main/user.png" alt="Main App Screenshot">
+    </div>
   </div>
-  <div class="emoji-title">🎯 Goal</div>
-  <p>To design a user-friendly salon booking experience optimized for all devices, enabling users to browse services, book appointments, view offers, and make secure payments in under 3 minutes.</p>
 
-  <div class="image-box">
-    <img src="images/role-screenshot.jpg" alt="Role screenshot" />
+  <div class="section">
+    <div class="label">Constraints</div>
+    <p>10-week timeline | Responsive Web App | Mobile-first design</p>
   </div>
-  <div class="emoji-title">🧑‍🎨 Role</div>
-  <p>Led the end-to-end UX/UI design from user research to wireframes, high-fidelity prototypes, and developer handoff.</p>
 
-  <div class="image-box">
-    <img src="images/team-screenshot.jpg" alt="Team screenshot" />
+  <div class="section">
+    <h2>🧠 Problem Space</h2>
+    <p>Many salon customers struggle with outdated booking systems or apps that are not mobile-friendly. Some don’t trust platforms that lack clear stylist info or reviews, and others drop off due to long signup or payment steps.</p>
   </div>
-  <div class="emoji-title">👥 Team</div>
-  <p>Solo designer with collaboration from a backend developer and product owner. Responsible for research, interaction design, visuals, and testing.</p>
 
-  <div class="emoji-title">📆 Timeframe</div>
-  <p>June — August 2023</p>
+  <div class="section">
+    <h2>🔍 Research Highlights</h2>
+    <ul>
+      <li><strong>Fast booking:</strong> Users want to book in under 3 minutes.</li>
+      <li><strong>Trust elements:</strong> Stylist bios, reviews, and certifications boost conversion.</li>
+      <li><strong>Mobile-first:</strong> Over 80% of users browse and book from their phones.</li>
+    </ul>
 
-  <div class="image-box">
-    <img src="images/research1.jpg" alt="User survey screenshot" />
+    <div class="image-box">
+      <img src="images/research1.jpg" alt="Research Screenshot">
+    </div>
   </div>
-  <div class="emoji-title">🔍 Research & Insights</div>
-  <p><strong>Methods:</strong> User surveys, competitor benchmarking, and usability testing</p>
-  <ul>
-    <li><strong>Speed matters:</strong> Users want to book quickly without signup barriers.</li>
-    <li><strong>Trust is critical:</strong> Reviews, certifications, and stylist bios increase confidence.</li>
-    <li><strong>Mobile-first behavior:</strong> 85% preferred booking via mobile.</li>
-    <li><strong>Offers & loyalty:</strong> Many are motivated by discounts and loyalty perks.</li>
-  </ul>
 
-  <div class="image-box">
-    <img src="images/design1.jpg" alt="Design strategy screenshot" />
+  <div class="section">
+    <h2>🎯 Goal</h2>
+    <p>Create a clean, responsive salon app where users can find a service, choose a stylist, and complete payment in under 3 minutes — without needing to register first.</p>
   </div>
-  <div class="emoji-title">💡 Design Strategy</div>
-  <ul>
-    <li>Thumb-friendly UI, sticky “Book Now” buttons</li>
-    <li>Stripe/Apple Pay integration</li>
-    <li>Spa-inspired typography & layout</li>
-    <li>Real-time slots, timezone handling</li>
-    <li>Trust: bios, ratings, protocols</li>
-  </ul>
 
-  <div class="image-box">
-    <img src="images/wireframe1.jpg" alt="Wireframe example" />
+  <div class="section">
+    <h2>🛠 Design Process</h2>
+    <ul>
+      <li>Empathize with users through interviews and surveys</li>
+      <li>Define problems and barriers from feedback</li>
+      <li>Ideate features like loyalty, reviews, instant rebooking</li>
+      <li>Prototype flows and UI in Figma</li>
+      <li>Test with 5 users and iterate</li>
+    </ul>
   </div>
-  <div class="emoji-title">🧪 Wireframes & Flows</div>
-  <ul>
-    <li>Home & landing pages</li>
-    <li>Service categories with filters</li>
-    <li>Stylist detail & ratings</li>
-    <li>Booking: Select → Time → Payment</li>
-    <li>Success & rebooking</li>
-  </ul>
 
-  <div class="image-box">
-    <img src="images/ui1.jpg" alt="High fidelity UI" />
+  <div class="section">
+    <h2>✏️ Ideation & Sketches</h2>
+    <p>Based on research insights, I started sketching potential flows and layouts. Below is the direction I pursued for digital wireframes.</p>
+
+    <div class="image-box">
+      <img src="images/sketch1.jpg" alt="Sketches">
+    </div>
   </div>
-  <div class="emoji-title">🎨 High-Fidelity UI</div>
-  <ul>
-    <li>Tools: Figma + Adobe XD</li>
-    <li>Responsive views: mobile, tablet, desktop</li>
-    <li>Atomic components</li>
-    <li>Pastel peach & deep lavender palette</li>
-    <li>Micro-interaction animations</li>
-  </ul>
 
-  <div class="image-box">
-    <img src="images/payments1.jpg" alt="Payment integration" />
+  <div class="section">
+    <h2>📐 Wireframes</h2>
+    <p>I created low- and mid-fidelity wireframes to map out user flows. The booking process was refined through two rounds of testing to ensure clarity and speed.</p>
+
+    <div class="image-box">
+      <img src="images/wireframe1.jpg" alt="Wireframes">
+    </div>
   </div>
-  <div class="emoji-title">💳 Payments & Services</div>
-  <ul>
-    <li>Secure Stripe payments</li>
-    <li>Promo codes & tipping</li>
-    <li>Home visit toggle</li>
-    <li>Service add-ons</li>
-  </ul>
 
-  <div class="image-box">
-    <img src="images/results1.jpg" alt="Launch results" />
+  <div class="section">
+    <h2>🎨 Visual Identity</h2>
+    <p>The final design uses calming tones like soft peach and lavender to evoke relaxation and trust. I focused on whitespace and subtle micro-interactions to guide the user.</p>
+
+    <div class="image-box">
+      <img src="images/ui1.jpg" alt="High Fidelity UI">
+    </div>
   </div>
-  <div class="emoji-title">📈 Launch Results (Beta)</div>
-  <ul>
-    <li>40% faster bookings</li>
-    <li>Mobile engagement up 62%</li>
-    <li>85% users rated 9+/10</li>
-    <li>Positive stylist feedback</li>
-  </ul>
 
-  <div class="emoji-title">📍 Landing Pages</div>
-  <ul>
-    <li>Seasonal & event offers</li>
-    <li>Location-based service pages</li>
-    <li>Used in IG & Google Ads</li>
-  </ul>
+  <div class="section">
+    <h2>💳 Payment Integration</h2>
+    <ul>
+      <li>Stripe and Apple Pay support</li>
+      <li>Discount codes, tipping, home visit toggle</li>
+    </ul>
 
-  <div class="emoji-title">🛠️ Next Steps</div>
-  <ul>
-    <li>AI-based recommendations</li>
-    <li>Loyalty point integration</li>
-    <li>Wellness & dermatology services</li>
-  </ul>
+    <div class="image-box">
+      <img src="images/payments1.jpg" alt="Payment Integration">
+    </div>
+  </div>
 
-  <a href="https://github.com/valluripalli27/mine-/blob/main/project.html">← Back to Projects</a>
+  <div class="section">
+    <h2>📈 Launch Results (Beta)</h2>
+    <ul>
+      <li>Bookings 40% faster than previous version</li>
+      <li>Mobile usage up 62%</li>
+      <li>85% of users rated the new flow 9+/10</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Next Steps</h2>
+    <ul>
+      <li>Add AI-powered service recommendations</li>
+      <li>Introduce wellness services (massage, skin)</li>
+      <li>Launch loyalty program</li>
+    </ul>
+  </div>
+
+  <a href="https://your-prototype-link.com" target="_blank" class="button">View Interactive Prototype</a>
 
 </body>
 </html>
