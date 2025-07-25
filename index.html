@@ -279,26 +279,22 @@
   <input type="radio" name="tabs" id="tab1" checked style="display: none;">
   <input type="radio" name="tabs" id="tab2" style="display: none;">
 
-  <!-- Tab Content -->
-  <div style="padding: 20px;">
-    <!-- Usability Testing Tab -->
-    <div id="content1" style="display: block;">
-      <p>Tested flows with 5 users across mobile and desktop. Feedback helped refine the "select stylist" and "payment" steps. Simplified booking steps based on confusion points.</p>
-    </div>
+ <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-family: sans-serif;">
 
-    <!-- Visual Identity Tab -->
-    <div id="content2" style="display: none;">
-      <p>Brand keywords: Calm, Elegant, Spa-like. Used soft peach and lavender tones with rounded components to match the spa aesthetic.</p>
-    </div>
+  <!-- Usability Testing Tab -->
+  <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px;">
+    <h2>🧪 Usability Testing</h2>
+    <p>Tested flows with 5 users across mobile and desktop. Feedback helped refine the "select stylist" and "payment" steps. Simplified booking steps based on confusion points.</p>
   </div>
 
-  <style>
-    #tab1:checked ~ div > #content1 { display: block; }
-    #tab1:checked ~ div > #content2 { display: none; }
-    #tab2:checked ~ div > #content1 { display: none; }
-    #tab2:checked ~ div > #content2 { display: block; }
-  </style>
+  <!-- Visual Identity Tab -->
+  <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px;">
+    <h2>🎨 Visual Identity</h2>
+    <p>Brand keywords: Calm, Elegant, Spa-like. Used soft peach and lavender tones with rounded components to match the spa aesthetic.</p>
+  </div>
+
 </div>
+
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
   <div>
