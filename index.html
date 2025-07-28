@@ -5,15 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salon & Spa</title>
   <style>
- body {
-      font-family: "Helvetica Neue", sans-serif;
-      line-height: 1.6;
-      background-color: #ffffff;
-      color: #333;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    } body {
+    /* Remove max-width and margin from body, make padding smaller if you want */
+    body {
       font-family: "Helvetica Neue", sans-serif;
       line-height: 1.6;
       background-image: url('https://raw.githubusercontent.com/valluripalli27/saloon/dc4e430c44120c90ea7f468e376e7d5e4f5fb8ac/spa.png');
@@ -22,11 +15,16 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       color: #333;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+      /* Remove max-width and margin to allow full width */
+      max-width: none;
+      margin: 0;
+      padding: 40px 40px; /* you can reduce if needed */
     }
-/* Header */
+
+    /* For the inner sections where you want to keep some width control, add container class if needed */
+    /* If you want absolutely full width for everything, remove max-widths from all containers */
+
+    /* Optional: make header content span full width with padding */
     header {
       display: flex;
       justify-content: space-between;
@@ -34,6 +32,8 @@
       margin-bottom: 40px;
       border-bottom: 1px solid #eee;
       padding-bottom: 15px;
+      max-width: none;
+      width: 100%;
     }
 
     .logo {
@@ -107,12 +107,15 @@
       margin-top: 30px;
       margin-bottom: 5px;
     }
- /* Footer */
+
+    /* Footer */
     footer {
       margin-top: 60px;
       border-top: 1px solid #eee;
       padding-top: 30px;
       text-align: center;
+      max-width: none;
+      width: 100%;
     }
 
     .social-icons a {
@@ -130,39 +133,88 @@
     .social-icons img:hover {
       transform: scale(1.1);
     }
+
+    /* For other divs with inline styles (like the one with background-image and padding), optionally update padding and width */
+    /* Example: */
+    div[style*="background-image"] {
+      padding: 100px 40px;
+      max-width: none;
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      color: black;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Grids: make sure grid containers have full width */
+    .grid-container {
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Your existing content here, no changes needed except CSS above -->
   <header>
-    <div class="logo">Lakshmi</div>
-  <nav>
-    <a href="https://lakshmi-site.netlify.app">Home</a>
-    <a href="#projects">Projects</a>
-  </nav>
+    <div class="logo">꧁𝕷𝕻꧂ </div>
+    <nav>
+      <a href="https://lakshmi-site.netlify.app">Home</a>
+      <a href="#projects">Projects</a>
+    </nav>
   </header>
- <div style="
-  background-image: url('https://raw.githubusercontent.com/valluripalli27/saloon/main/background.jpg'); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  padding: 100px 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: black;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  background-color: #f5f5f5;
+  
+  <div style="
+    background-image: url('https://raw.githubusercontent.com/valluripalli27/saloon/main/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    max-width: none;
+    width: 100%;
+  ">
+    <h1 style="
+  font-family: 'Georgia', serif; 
+  font-size: 3rem; 
+  margin-bottom: 10px; 
+  color: #4a4a4a; 
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 2px;
+  font-weight: 600;
 ">
-  <h1 style="font-size: 3rem; margin-bottom: 10px;">Salon & Spa Booking App</h1>
-  <p style="font-size: 1.2rem; font-weight: 500; margin-top: 0; color: black;">
-    <strong>UX/UI Design</strong> • Responsive Web App • 10 Week Timeline
-  </p>
-</div>
-    <h2>Project Overview</h2>
-    <p>
+  Salon & Spa Booking App
+</h1>
+    <p style="font-size: 1.2rem; font-weight: 500; margin-top: 0; color: black;">
+      <strong>UX/UI Design</strong> • Responsive Web App • 10 Week Timeline
+    </p>
+  </div>
+ <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 900px; margin: 40px auto;">
+
+  <div>
+    <h2 style="font-family: 'Georgia', serif; font-size: 2.5rem; color: #2c3e50; margin-bottom: 15px;">
+      Project Overview
+    </h2>
+    <p style="font-family: 'Arial', sans-serif; font-size: 1.125rem; line-height: 1.6; color: #000000;">
       I designed and developed a full-featured salon and spa website with seamless navigation and a responsive user interface. The platform enables real-time service browsing, filtering, and appointment booking to ensure a smooth and intuitive user experience. Secure payments were integrated using Stripe and Apple Pay, along with features like optional tipping and a loyalty system. Additionally, I implemented location-based service filtering and customizable add-ons to personalize each booking.
     </p>
   </div>
+
+  <div>
+    <img 
+      src="https://raw.githubusercontent.com/valluripalli27/saloon/7a28d3f5b2d8cb20bbf83c9dd7b0fd098643ebed/women.png" 
+      alt="Salon and Spa Project Screenshot" 
+      style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" 
+    />
+  </div>
+
+</div>
 
 </div>
 
@@ -175,39 +227,67 @@
     margin-bottom: 30px;
     font-family: Arial, sans-serif;
   }
-  .grid-container {
+
+  .green-box-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    font-family: Arial, sans-serif;
+    align-items: start;
   }
-  .grid-item {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 15px 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+  .green-box-content {
+    display: flex;
+    flex-direction: column;
   }
-  .grid-item h3 {
+
+  .green-box-content h3 {
+    color: #155724;
+    font-size: 1.3rem;
     margin-top: 0;
-    color: #155724; /* dark green */
-    font-size: 1.1rem;
   }
-  .grid-item p {
-    margin: 8px 0 0 0;
+
+  .green-box-content p {
     color: #3c763d;
     font-size: 0.95rem;
-    line-height: 1.3;
+    line-height: 1.4;
+    margin: 8px 0;
+  }
+
+  .team-duration-grid {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 20px;
+    color: #155724;
+  }
+
+  .green-box-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
   }
 </style>
+
 <div class="green-box">
-  <h3>Where UX Meets Self-Care: Designing a Frictionless Booking & Browsing Experience</h3>
-  <p>I led the end-to-end UX design for BizInc’s new salon and spa web presence a digital front door for walk-in customers and online bookings. The challenge? Create a seamless, visually inviting landing and service experience that felt as smooth as a head massage while integrating with real-time scheduling tools, service filters, and accessibility standards.</p>
-  <p>I owned the UX from initial research and wireframes to high-fidelity designs and developer handoff, collaborating with both product and engineering teams to ensure the site was responsive, fast, and brand-aligned across devices.</p>
-  <div class="team-duration-grid">
-    <strong>Team Size:</strong><span>5</span>
-    <strong>Duration:</strong><span>7 months</span>
+  <div class="green-box-grid">
+    <div class="green-box-content">
+      <h3>Where AI Met UX: 5 Smart Enhancements I Designed</h3>
+      <p>🔍 AI-Powered Service Recommendations: To make browsing effortless, I designed personalized suggestions using AI concepts like collaborative filtering. The system could highlight trending services, preferred stylists, or treatments based on previous visits — helping users find what they need without endless scrolling.</p>
+      <p>💬 Conversational Booking with AI Chatbot: I introduced a chatbot prototype using AI/NLP tools like Dialogflow and GPT to guide users through bookings, answer FAQs, and offer style suggestions in real-time. This feature simulated the warmth of a front-desk receptionist while staying available 24/7.</p>
+     <p>🕒 Predictive Scheduling Suggestions: AI models analyzed booking patterns, cancellations, and peak hours to offer smarter scheduling options like nudging users toward off-peak discounts or alerting them when their favorite stylist was available soon. It helped both users and staff optimize time.</p>
+ <p>A♿ AI-Driven Accessibility Checks: I ran accessibility audits using AI tools (like Microsoft's Accessibility Insights) to catch issues early from color contrast to keyboard focus. This ensured the experience was not just beautiful, but inclusive and compliant with WCAG standards.</p>
+      <p>📊 Post-Launch Refinement with Behavioral AI: I gave idea using AI-based analytics tools to analyze real user behavior heatmaps, click patterns, and drop-offs. These insights directly informed ongoing design tweaks and feature prioritization.</p>
+      <div class="team-duration-grid">
+        <strong>Team Size:</strong><span>5</span>
+        <strong>Duration:</strong><span>7 months</span>
+      </div>
+    </div>
+    <div class="green-box-image">
+      <img src="https://raw.githubusercontent.com/valluripalli27/saloon/7a28d3f5b2d8cb20bbf83c9dd7b0fd098643ebed/AI%20Imposed.png" alt="Salon UI Design Preview" />
+    </div>
   </div>
 </div>
+
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; align-items: start;">
 
@@ -236,9 +316,10 @@
 
   <div style="background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 20px; font-family: Arial, sans-serif; color: #155724; margin-bottom: 30px;">
   <h2 style="margin-top: 0;">How Might We..</h2>
-  <p style="color: #3c763d; font-size: 1rem; margin-bottom: 0;">
-    Designing a modern salon booking platform involves creating a seamless and trustworthy experience that enables users to schedule appointments quickly and effortlessly. Prioritizing mobile optimization ensures accessibility and convenience for users on the go, enhancing overall satisfaction.
-  </p>
+  <div style="border-left: 4px solid #3c763d; background-color: #f0fdf4; padding: 16px; font-style: italic; color: #3c763d; font-size: 1rem; margin: 1em 0;">
+  “Designing a modern salon booking platform involves creating a seamless and trustworthy experience that enables users to schedule appointments quickly and effortlessly. Prioritizing mobile optimization ensures accessibility and convenience for users on the go, enhancing overall satisfaction.”
+</div>
+
 </div>
 
   <h2>Task Flow</h2>
@@ -328,7 +409,7 @@
 <!-- Footer -->
   <footer>
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/lakshmi-prasanna-8b3010160" target="_blank">
+      <a href="https://cdn-icons-png.flaticon.com/512/174/174857.png" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/YOUR_USERNAME" target="_blank">
